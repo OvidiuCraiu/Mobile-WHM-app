@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/scanResultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scan result will appear here"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/manualInputEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Manual barcode input"
+        android:inputType="text"
+        android:layout_below="@id/scanResultTextView"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/scanButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scan Barcode"
+        android:layout_below="@id/manualInputEditText"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit Manual Input"
+        android:layout_below="@id/scanButton"/>
+
+</RelativeLayout>
